@@ -9,6 +9,7 @@ services:
       - .env
     volumes:
       - ./apache/drupal.conf:/etc/apache2/sites-enabled/drupal.conf
+      - ./apache/drupaloracle.conf:/etc/apache/sites-enabled/drupaloracle.conf
       - ./html:/html
       - ./apache/certificados:/certificados
   basededatos:
